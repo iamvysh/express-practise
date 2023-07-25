@@ -6,7 +6,7 @@ const uploads=multer({dest:"upload/"})
 const port=3000
 
 
-app.use("/uploads",express.static('upload'))
+// app.use("/uploads",express.static('upload'))
 
 
 app.post("/uploads",uploads.single('image'),(req,res)=>{
